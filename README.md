@@ -7,7 +7,7 @@ report on what type of disease should be referred to refer him to appropriate
 treatment or recommendations to help minimize the disease. The manner in which the program 
 calculates or assigns any disease to the diagnosed is determined only arbitrarily and is mainly based in such a way that diseases that have a common connection with other diseases validate any disease in the diagnosed. Inside the dubug folder you will find, among other things, text files that contain all possible types of diseases (in fact, the list of diseases is written in Hebrew, unlike the other things in the program).
 
-After running the program from the MainWindow window (if you want to run the program using Diabger) or by running with the existing exe file in the dubug folder, you will be asked to enter a username, password and ID number, 
+After running the program from the MainWindow window (if you want to run the program using debugger) or by running with the existing exe file in the dubug folder, you will be asked to enter a username, password and ID number, 
 because this is a sample program please enter the debug folder name A user text file appears, copy the texts one by one according to the boxes and click the
 login button. Now in the main window select Test New for a test, in the next window you will fill in the required details and additional questions, 
 after you have filled most of the text fields with standard values 
