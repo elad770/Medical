@@ -1,6 +1,7 @@
 # Medical
 
 MedicalManager An application for managing medical examinations.
+
 Before running the program, it is important to emphasize that this is just a sample program that diagnoses any diseases (and non-profit of course) that the person diagnosed should answer and then get a report on what type of disease should be referred to refer him to appropriate treatment or recommendations to help minimize the disease.
 The manner in which the program calculates or assigns any disease to the diagnosed is determined only arbitrarily and is mainly based in such a way that diseases that have a common connection with other diseases validate any disease in the diagnosed.
 Inside the dubug folder you will find, among other things, text files that contain all possible types of diseases (in fact, the list of diseases is written in Hebrew, unlike the other things in the program).
