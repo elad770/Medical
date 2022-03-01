@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patients>
+  <Patient Region="Europe" Gender="זכר" Age="36" Id="123123123" Name="David">
+    <ResultVisit0 Date="22/02/2022 18:37:16">
+      <Questions>
+        <IsSmoking>true</IsSmoking>
+        <IsHeat>false</IsHeat>
+        <IsDiarrhea>false</IsDiarrhea>
+        <Man />
+      </Questions>
+      <Tests>
+        <White_Blood_Cells>1</White_Blood_Cells>
+        <Neutrophil>2</Neutrophil>
+        <Lymphocytes>3</Lymphocytes>
+        <Red_Blood_Cells>4</Red_Blood_Cells>
+        <Hemoglobin>5</Hemoglobin>
+        <Creatinine>6</Creatinine>
+        <HCT>7</HCT>
+        <Urea>8</Urea>
+        <Iron>9</Iron>
+        <HDL>10</HDL>
+        <AP>11</AP>
+      </Tests>
+      <Diagnostic>
+        <Diseases>
+          <Disease NameDisease="תת תזונה" Treatment=" לתאם פגישה עם תזונאי" />
+          <Disease NameDisease="סרטן" Treatment=" אנטרקטיניב - Entrectinib" />
+          <Disease NameDisease="הפרעה ביצירת הדם/תאי דם" Treatment=" כדור 10 מ&quot;ג של B12 ביום למשך חודש כדור 5 מ&quot;ג של חומצה פולית ביום למשך חודש" />
+          <Disease NameDisease="דימום" Treatment=" להתפנות בדחיפות לבית החולים" />
+          <Disease NameDisease="אנמיה" Treatment=" שני כדורי 10 מ&quot;ג של B12 ביום למשך חודש" />
+          <Disease NameDisease="דיאטה" Treatment=" לתאם פגישה עם תזונאי" />
+          <Disease NameDisease="היפרליפידמיה (שומנים בדם)" Treatment=" לתאם פגישה עם תזונאי, כדור 5 מ&quot;ג של סימוביל ביום למשך שבוע" />
+          <Disease NameDisease="הפרעה המטולוגית" Treatment=" זריקה של הורמון לעידוד ייצור תאי הדם האדומים" />
+          <Disease NameDisease="זיהום" Treatment=" אנטיביוטיקה ייעודית" />
+          <Disease NameDisease="חוסר בוויטמינים" Treatment=" הפנייה לבדיקת דם לזיהוי הוויטמינים החסרים" />
+          <Disease NameDisease="מחלה ויראלית" Treatment=" לנוח בבית" />
+          <Disease NameDisease="מחלות לב" Treatment=" לתאם פגישה עם תזונאי" />
+          <Disease NameDisease="מחלת כבד" Treatment=" הפנייה לאבחנה ספציפית לצורך קביעת טיפול" />
+          <Disease NameDisease="מחלת כליה" Treatment=" איזון את רמות הסוכר בדם" />
+          <Disease NameDisease="מחסור בברזל" Treatment=" שני כדורי 10 מ&quot;ג של B12 ביום למשך חודש" />
+          <Disease NameDisease="מחלות שריר" Treatment=" שני כדורי 5 מ&quot;ג של כורכום c3 של אלטמן ביום למשך חודש" />
+          <Disease NameDisease="סוכרת מבוגרים" Treatment=" התאמת אינסולין למטופל" />
+          <Disease NameDisease="צריכה מוגברת של בשר" Treatment=" לתאם פגישה עם תזונאי" />
+        </Diseases>
+      </Diagnostic>
+    </ResultVisit0>
+  </Patient>
+</Patients>
