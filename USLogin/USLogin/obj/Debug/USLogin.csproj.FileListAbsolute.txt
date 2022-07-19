@@ -1,0 +1,16 @@
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.csproj.AssemblyReference.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\UserLogin.g.cs
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin_MarkupCompile.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin_MarkupCompile.lref
+C:\Users\elady\source\repos\USLogin\USLogin\bin\Debug\USLogin.dll
+C:\Users\elady\source\repos\USLogin\USLogin\bin\Debug\USLogin.pdb
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\UserLogin.baml
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.g.resources
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.Properties.Resources.resources
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.csproj.GenerateResource.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.csproj.CoreCompileInputs.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.dll
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.pdb
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.csproj.Fody.CopyLocal.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\USLogin.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\elady\source\repos\USLogin\USLogin\obj\Debug\GeneratedInternalTypeHelper.g.cs

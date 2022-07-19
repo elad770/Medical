@@ -8,253 +8,66 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Xml.XPath;
-
+using PropertyChanged;
 namespace LibraryDiagnosis
 {
     public enum Region { East, Europe, Ethiopia, Other };
 
-
+   
     public class Patient: INotifyPropertyChanged
     {
 
-      private string name, id;
-      private double wcb, neut, lymph, rbc, hb, creatinine, hct, urea, iron, hdl,ap;
 
         [DisplayName("Full Name")]
-        public string Name
-        {
-            set
-            {
-                name = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("Name"));
-                }
-            }
-            get
-            {
-                return name;
-            }
-        }
+        public string Name { set; get; }
 
         [DisplayName("ID Number")]
-        public string Id
-        {
-            set
-            {
-                id = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("Id"));
-                }
-            }
-            get
-            {
-                return id;
-            }
-        }
+        public string Id { set;get; }
 
         [DisplayName("White Blood Cells")]
         [Description("\n-White Blood Cells\n  Normal Values:\n  18+: 4500-11000\n  4-17: 5500-15500\n  0-3: 6000-17500")]
-        public double cWCB
-        {
-            set
-            {
-
-                // wcb = Regex.IsMatch(value.ToString(), @"^\-?\d*\.?\d*$") ? value:0;
-                wcb = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cWCB"));
-                }
-            }
-            get
-            {
-                return wcb;
-            }
-        }
+        public double cWCB { set; get; }
 
         [DisplayName("Neutrophil")]
         [Description("\n-Neutrophil\n  Normal Values:\n  28%-54% of all\n  white blood cells")]
-        public double cNeut
-        {
-            set
-            {
-                neut = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cNeut"));
-                }
-            }
-            get
-            {
-                return neut;
-            }
-        }
+        public double cNeut { set; get; }
 
         [DisplayName("Lymphocytes")]
         [Description("\n-Lymphocytes\n  Normal Values:\n  36%-52% of all\n  white blood cells")]
-        public double cLymph
-        {
-            set
-            {
-                lymph = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cLymph"));
-                }
-            }
-            get
-            {
-                return lymph;
-            }
-        }
+        public double cLymph { set; get; }
 
         [DisplayName("Red Blood Cells")]
         [Description("\n-Red Blood Cells\n  Normal Values:\n  4.5-6")]
-        public double cRBC
-        {
-            set
-            {
-                rbc = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cRBC"));
-                }
-            }
-            get
-            {
-                return rbc;
-            }
-        }
+        public double cRBC { set; get; }
 
         [DisplayName("Hemoglobin")]
         [Description("\n-Hemoglobin\n  Normal Values:\n  Women: 12-16\n  Men: 12-18\n  Children(0-17): 11.5-\n  15.5")]
-        public double cHb
-        {
-            set
-            {
-                hb = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cHb"));
-                }
-            }
-            get
-            {
-                return hb;
-            }
-        }
+        public double cHb { set; get; }
 
         [DisplayName("Creatinine")]
         [Description("\n-Creatinine\n  Normal Values:\n  0-2: 0.2-0.5\n  3-17: 0.5-1 12-18\n  18-59: 0.6-1\n  60+: 0.6-1.2")]
-        public double cCreatinine
-        {
-            set
-            {
-                creatinine = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cCreatinine"));
-                }
-            }
-            get
-            {
-                return creatinine;
-            }
-        }
+        public double cCreatinine { set; get; }
 
         [DisplayName("HCT")]
         [Description("\n-HCT\n  Normal Values:\n  Man: 37%-54%\n  Woman: 33%-47%")]
-        public double cHCT
-        {
-            set
-            {
-                hct = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cHCT"));
-                }
-            }
-            get
-            {
-                return hct;
-            }
-        }
+        public double cHCT { set; get; }
 
         [DisplayName("Urea")]
         [Description("\n-Urea\n  Normal Values:\n  17-43\n  Easterners: 10%\n  more")]
-        public double cUrea
-        {
-            set
-            {
-                urea = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cUrea"));
-                }
-            }
-            get
-            {
-                return urea;
-            }
+        public double cUrea {  set; get; }
 
-        }
 
         [DisplayName("Iron")]
         [Description("\n-Iron\n Normal Values:\n  60-160\n  Woman: 20% less")]
-        public double cIron
-        {
-            set
-            {
-                iron = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cIron"));
-                }
-            }
-            get
-            {
-                return iron;
-            }
-
-        }
+        public double cIron { set; get; }
 
         [DisplayName("HDL")]
         [Description("\n-High Density\n Lipoprotein\n Normal Values:\n Man: 29-62\n Woman: 34-82\n Ethiopian: 20% more")]
-        public double cHDL
-        {
-            set
-            {
-                hdl = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cHDL"));
-                }
-            }
-            get
-            {
-                return hdl;
-            }
-        }
+        public double cHDL { set; get; }
 
         [DisplayName("AP")]
         [Description("\n-Alkaline Phosphatase\n Normal Values:\n Easterners: 60-120\n Rest of the others:\n 30-90")]
-        public double cAP
-        {
-            set
-            {
-                ap = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs("cAP"));
-                }
-            }
-            get
-            {
-                return ap;
-            }
-        }
+        public double cAP { set; get; }
 
         public int Age { get; set; }
         public bool Gender { get; set; }
@@ -265,7 +78,7 @@ namespace LibraryDiagnosis
         public bool? IsPregnant { get; set; }
         public string DateTest { get; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged = (sender, e) => { };
 
 
         public Patient() { DateTest = DateTime.Now.ToString(); }

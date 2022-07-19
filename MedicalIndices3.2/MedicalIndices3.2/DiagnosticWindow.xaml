@@ -1,0 +1,71 @@
+﻿<Window x:Class="MedicalIndices3._2.DiagnosticWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalIndices3"
+        mc:Ignorable="d"
+       Title="Patient Dignostic" WindowState="Maximized" Background="{DynamicResource backgroundImage}" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/AllResource.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Window.Resources>
+    <ScrollViewer>
+        <Grid Name="GridRoot">
+            <!--<Grid.Background>
+                <ImageBrush ImageSource="C:\Users\elady\source\repos\ManagementMedical3\ManagementMedical3\bin\Debug\Main.jpeg" Stretch="UniformToFill"/>
+            </Grid.Background>-->
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="210"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="10"/>
+
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="350"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Name="border" Style="{StaticResource BorderStyle}" Grid.Column="1"
+                            BorderThickness="0" Margin="0,10,20,10" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="10"/>
+
+                        </Grid.RowDefinitions>
+
+                        <Label Name="laName" Content="שם:" Style="{StaticResource resTextLabel}" Grid.Row="1" Margin="0,0,20,0"   HorizontalAlignment="Right" FlowDirection="RightToLeft" />
+                        <TextBox Name="tbName" Text="{Binding Path=Name}" IsEnabled="False" Grid.Row="1" Margin="0,0,80,0" HorizontalAlignment="Right" FlowDirection="RightToLeft" VerticalAlignment="Center" Style="{StaticResource resTextBox}" Background="White" />
+
+                        <Label  Content=":ת.ז" Style="{StaticResource resTextLabel}" Margin="{Binding ElementName=laName, Path=Margin}" Grid.Row="2"   HorizontalAlignment="Right"  />
+                        <TextBox Name="tbId" Text="{Binding Path=Id}" IsEnabled="False" Grid.Row="2" Margin="{Binding Path=Margin, ElementName=tbName}" HorizontalAlignment="Right" FlowDirection="RightToLeft" VerticalAlignment="Center" Style="{StaticResource resTextBox}" Background="{Binding ElementName=tbName, Path=Background}" />
+                        <Label  Content=":גיל" Style="{StaticResource resTextLabel}" Grid.Row="3"   HorizontalAlignment="Right" Margin="{Binding ElementName=laName, Path=Margin}" />
+                        <TextBox Name="tbAge" Text="{Binding Path=Age}" IsEnabled="False" Grid.Row="3" Margin="{Binding Path=Margin, ElementName=tbName}" HorizontalAlignment="Right" FlowDirection="RightToLeft" VerticalAlignment="Center" Style="{StaticResource resTextBox}" Background="{Binding ElementName=tbName, Path=Background}" />
+                        <Label  Content=":מין" Style="{StaticResource resTextLabel}" Margin="{Binding Path=Margin, ElementName=laName}" Grid.Row="4"   HorizontalAlignment="Right" />
+
+                        <TextBox Name="tbGen"  IsEnabled="False" Grid.Row="4" Margin="{Binding ElementName=tbName, Path=Margin}" HorizontalAlignment="Right" FlowDirection="RightToLeft" VerticalAlignment="Center" Style="{StaticResource resTextBox}"  Background="White" />
+
+                    </Grid>
+                </Border>
+            </Grid>
+            <TextBlock Name="totalResult"  TextBlock.TextDecorations="Underline" FontSize="{Binding ElementName=laName, Path=FontSize}"   Foreground="{Binding ElementName=laName, Path=Foreground}" Width="{Binding ElementName=laName, Path=Width}"  Grid.Row="2" HorizontalAlignment="Center" FontWeight="Bold" />
+        </Grid>
+    </ScrollViewer>
+</Window>

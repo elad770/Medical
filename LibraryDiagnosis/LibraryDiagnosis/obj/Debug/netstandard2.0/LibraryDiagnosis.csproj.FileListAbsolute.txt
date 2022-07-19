@@ -1,9 +1,12 @@
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\bin\Debug\netstandard2.0\LibraryDiagnosis.deps.json
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\bin\Debug\netstandard2.0\LibraryDiagnosis.dll
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\bin\Debug\netstandard2.0\LibraryDiagnosis.pdb
-C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.csprojAssemblyReference.cache
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.csproj.CoreCompileInputs.cache
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.AssemblyInfoInputs.cache
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.AssemblyInfo.cs
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.dll
 C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.pdb
+C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.csproj.AssemblyReference.cache
+C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.csproj.Fody.CopyLocal.cache
+C:\Users\elady\source\repos\LibraryDiagnosis\LibraryDiagnosis\obj\Debug\netstandard2.0\LibraryDiagnosis.csproj.Fody.RuntimeCopyLocal.cache
